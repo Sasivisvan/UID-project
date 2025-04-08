@@ -1,0 +1,51 @@
+.topnav {
+    background-color: black;
+    color: white;
+
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    width: 100%;
+    float: right;
+}
+
+.topnav a {
+    text-decoration: none;
+    float: right;
+    display: block;
+    color: #fff7f7;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background-color .3s;
+}
+
+.topnav a.title {
+    float: left;
+    margin: 0px 30px;
+    padding: 14px 24px;
+    font-size: 20px;
+}
+
+.topnav a.title:hover {
+    float: left;
+    margin: 0px 30px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.topnav a:hover {
+    background-color: rgb(255, 245, 245);
+    color: rgb(0, 0, 0);
+}
+
+body,
+head {
+    margin: 0px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Share Tech", sans-serif;
+}

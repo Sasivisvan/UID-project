@@ -1,0 +1,104 @@
+body {
+    margin-top: 0px;
+    background-color: black;
+    color: cornsilk;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boxl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-color: rgb(29, 27, 27);
+    margin: 6% 35%;
+    color: cornsilk;
+    border-radius: 20px;
+    padding-right: 30px;
+    padding-left: 20px;
+    transform: scale(1.4);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.boxl form {
+    align-items: left;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    min-width: 120px;
+    text-align: right;
+    padding-right: 15px;
+    padding-right: 20px;
+}
+
+.form-group input {
+    width: 50%;
+    flex: none;
+    background-color: rgb(163, 28, 208);
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    color: #38cf01;
+    margin-left: 30px;
+    
+    
+}
+
+.boxl form input:hover {
+    box-shadow: 0 0 5px 2px #d400ff,
+        0 0 5px 2px #00b3ff,
+        0 0 5px 2px #ff0000,
+        0 0 5px 2px #38cf01
+}
+
+.boxl form button {
+    border-radius: 14px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: 18px;
+    height: 40px;
+    width: 75px;
+    border: none;
+    cursor: pointer;
+}
+
+.boxl form button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s;
+    color: rgb(0, 0, 0);
+    font-weight: 650;
+    transform: scale(1.1);
+}
+
+.boxl form a {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding-right: 110px;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}

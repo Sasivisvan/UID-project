@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="compare_style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- <script src="compare.js"></script> -->
+
+    <script src="PapaParse/papaparse.js"></script>
+    <!-- <script src="https://fastcdn.org/Papa-Parse/4.1.2/papaparse.min.js"></script> -->
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="title" href="#">TechIcon</h1>
+        <a href="#login">Login</a>
+        <a href="#signup">Signup</a>
+        <a href="home.html">Home</a>
+        <a href="#latest">Latest</a>
+        <a href="compare.html">Compare</a>
+    </div>
+    <br>
+
+    </head>
+
+    <body>
+
+        <h1 style="text-align: center;">Smartphone Comparison</h1>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th id="phone-1-name">Asus ROG Phone 5</th>
+                    <th>Property</th>
+                    <th id="phone-2-name">Motorola Edge 20 Pro</th>
+
+                    <!-- Duplicate column for better readability -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td id="phone-1-price-value">69900</td>
+                    <td class="property-column" id="phone-1-price">Price (INR)</td>
+                    <td id="phone-2-price-value">74999</td>
+
+                </tr>
+                <tr>
+
+                    <td id="phone-1-camera-value">64</td>
+                    <td class="property-column" id="phone-1-camera">Camera (MP)</td>
+                    <td id="phone-2-camera-value">108</td>
+
+                </tr>
+                <tr>
+                    <td id="phone-1-battery-value">6000</td>
+                    <td class="property-column" id="phone-1-battery">Battery (mAh)</td>
+                    <td id="phone-2-battery-value">4500</td>
+
+                </tr>
+                <tr>
+
+                    <td id="phone-1-display-value">6.78</td>
+                    <td class="property-column" id="phone-1-display">Display (inches)</td>
+                    <td id="phone-2-display-value">6.7</td>
+
+                </tr>
+                <tr>
+
+                    <td id="phone-1-ram-value">16</td>
+                    <td class="property-column" id="phone-1-ram">RAM (GB)</td>
+                    <td id="phone-2-ram-value">12</td>
+
+                </tr>
+                <tr>
+
+                    <td id="phone-1-storage-value">512</td>
+                    <td class="property-column" id="phone-1-storage">Storage (GB)</td>
+                    <td id="phone-2-storage-value">256</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="display(smartphone1, smartphone2)">Click me</button>
+        <script src="compare2.js"></script>
+    </body>
+
+</html>
