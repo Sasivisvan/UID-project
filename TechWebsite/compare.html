@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="compare_style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -21,99 +21,121 @@
 <body>
     <div class="topnav">
         <a class="title" href="#">TechIcon</h1>
-        <a href="login-page.html">Login</a>
-        <a href="signup-page.html">Signup</a>
-        <a href="home.html">Home</a>
-        <a href="#latest">Latest</a>
-        <a href="compare.html">Compare</a>
+            <a href="login-page.html">Login</a>
+            <a href="signup-page.html">Signup</a>
+            <a href="home.html">Home</a>
+            <a href="#latest">Latest</a>
+            <a href="compare.html">Compare</a>
     </div>
     <br>
+    <br><br>
+    <br><br>
+    <br>
+    <h1 style="text-align: center; color: cornsilk">Smartphone Comparison</h1>
+    
+    <div class="right-side">
+        <select name="smartphones" id="smartphone1">
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
+            <option value="Google Pixel 6">Google Pixel 6</option>
+            <option value="OnePlus 9">OnePlus 9</option>
+            <option value="Xiaomi Mi 11">Xiaomi Mi 11</option>
+            <option value="Oppo Find X3 Pro">Oppo Find X3 Pro</option>
+            <option value="Huawei P40 Pro">Huawei P40 Pro</option>
+            <option value="Realme GT 5G">Realme GT 5G</option>
+            <option value="Asus ROG Phone 5">Asus ROG Phone 5</option>
+            <option value="Motorola Edge 20 Pro">Motorola Edge 20 Pro</option>
+        </select>
+    </div>
+    <div class="left-side">
+        <select name="smartphones" id="smartphone2">
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
+            <option value="Google Pixel 6">Google Pixel 6</option>
+            <option value="OnePlus 9">OnePlus 9</option>
+            <option value="Xiaomi Mi 11">Xiaomi Mi 11</option>
+            <option value="Oppo Find X3 Pro">Oppo Find X3 Pro</option>
+            <option value="Huawei P40 Pro">Huawei P40 Pro</option>
+            <option value="Realme GT 5G">Realme GT 5G</option>
+            <option value="Asus ROG Phone 5">Asus ROG Phone 5</option>
+            <option value="Motorola Edge 20 Pro">Motorola Edge 20 Pro</option>
+        </select>
+        <button id="compare" onclick="compare()">Compare</button>
+        <div class="description-container" id="description-container">
+            <div class="description-card" id="left-description">
+                <h2 id="left-title">Smartphone 1</h2>
+                <img id="left-image" class="phone-image" src="" alt="Smartphone 1">
+                <p id="left-text">Description will appear here.</p>
+            </div>
+            <div class="description-card" id="right-description">
+                <h2 id="right-title">Smartphone 2</h2>
+                <img id="right-image" class="phone-image" src="" alt="Smartphone 2">
+                <p id="right-text">Description will appear here.</p>
+            </div>
+        </div>
+    </div>
+    
+    <br>
 
-    <select name="smartphones" id="smartphone1">
-        <option value="iPhone 13">iPhone 13</option>
-        <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
-        <option value="Google Pixel 6">Google Pixel 6</option>
-        <option value="OnePlus 9">OnePlus 9</option>
-        <option value="Xiaomi Mi 11">Xiaomi Mi 11</option>
-        <option value="Oppo Find X3 Pro">Oppo Find X3 Pro</option>
-        <option value="Huawei P40 Pro">Huawei P40 Pro</option>
-        <option value="Realme GT 5G">Realme GT 5G</option>
-        <option value="Asus ROG Phone 5">Asus ROG Phone 5</option>
-        <option value="Motorola Edge 20 Pro">Motorola Edge 20 Pro</option>
-      </select>
+    
 
-      <select name="smartphones" id="smartphone2">
-        <option value="iPhone 13">iPhone 13</option>
-        <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
-        <option value="Google Pixel 6">Google Pixel 6</option>
-        <option value="OnePlus 9">OnePlus 9</option>
-        <option value="Xiaomi Mi 11">Xiaomi Mi 11</option>
-        <option value="Oppo Find X3 Pro">Oppo Find X3 Pro</option>
-        <option value="Huawei P40 Pro">Huawei P40 Pro</option>
-        <option value="Realme GT 5G">Realme GT 5G</option>
-        <option value="Asus ROG Phone 5">Asus ROG Phone 5</option>
-        <option value="Motorola Edge 20 Pro">Motorola Edge 20 Pro</option>
-      </select>
-      <button id="compare" onclick="compare()">Compare</button>
+    <table id="compare_table">
+        <thead>
+            <tr>
 
-        <h1 style="text-align: center; color: rgb(255, 255, 255)">Smartphone Comparison</h1>
+                <th id="phone-1-name">Asus ROG Phone 5</th>
+                <th>Property</th>
+                <th id="phone-2-name">Motorola Edge 20 Pro</th>
 
-        <table id="compare_table">
-            <thead>
-                <tr>
+                <!-- Duplicate column for better readability -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
 
-                    <th id="phone-1-name">Asus ROG Phone 5</th>
-                    <th>Property</th>
-                    <th id="phone-2-name">Motorola Edge 20 Pro</th>
+                <td id="phone-1-price-value">69900</td>
+                <td class="property-column" id="phone-1-price">Price (INR)</td>
+                <td id="phone-2-price-value">74999</td>
 
-                    <!-- Duplicate column for better readability -->
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
+            </tr>
+            <tr>
 
-                    <td id="phone-1-price-value">69900</td>
-                    <td class="property-column" id="phone-1-price">Price (INR)</td>
-                    <td id="phone-2-price-value">74999</td>
+                <td id="phone-1-camera-value">64</td>
+                <td class="property-column" id="phone-1-camera">Camera (MP)</td>
+                <td id="phone-2-camera-value">108</td>
 
-                </tr>
-                <tr>
+            </tr>
+            <tr>
+                <td id="phone-1-battery-value">6000</td>
+                <td class="property-column" id="phone-1-battery">Battery (mAh)</td>
+                <td id="phone-2-battery-value">4500</td>
 
-                    <td id="phone-1-camera-value">64</td>
-                    <td class="property-column" id="phone-1-camera">Camera (MP)</td>
-                    <td id="phone-2-camera-value">108</td>
+            </tr>
+            <tr>
 
-                </tr>
-                <tr>
-                    <td id="phone-1-battery-value">6000</td>
-                    <td class="property-column" id="phone-1-battery">Battery (mAh)</td>
-                    <td id="phone-2-battery-value">4500</td>
+                <td id="phone-1-display-value">6.78</td>
+                <td class="property-column" id="phone-1-display">Display (inches)</td>
+                <td id="phone-2-display-value">6.7</td>
 
-                </tr>
-                <tr>
+            </tr>
+            <tr>
 
-                    <td id="phone-1-display-value">6.78</td>
-                    <td class="property-column" id="phone-1-display">Display (inches)</td>
-                    <td id="phone-2-display-value">6.7</td>
+                <td id="phone-1-ram-value">16</td>
+                <td class="property-column" id="phone-1-ram">RAM (GB)</td>
+                <td id="phone-2-ram-value">12</td>
 
-                </tr>
-                <tr>
+            </tr>
+            <tr>
 
-                    <td id="phone-1-ram-value">16</td>
-                    <td class="property-column" id="phone-1-ram">RAM (GB)</td>
-                    <td id="phone-2-ram-value">12</td>
+                <td id="phone-1-storage-value">512</td>
+                <td class="property-column" id="phone-1-storage">Storage (GB)</td>
+                <td id="phone-2-storage-value">256</td>
 
-                </tr>
-                <tr>
-
-                    <td id="phone-1-storage-value">512</td>
-                    <td class="property-column" id="phone-1-storage">Storage (GB)</td>
-                    <td id="phone-2-storage-value">256</td>
-
-                </tr>
-            </tbody>
-        </table>
-        <script src="compare2.js"></script>
-    </body>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br>
+    <script src="compare2.js"></script>
+</body>
 
 </html>

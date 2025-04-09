@@ -1,98 +1,184 @@
+/* Updated Colors & Sizing */
 
-#smartphone1{
-    display: flex;
-}
-#smartphone2{
-    display: flex;
+body,
+head {
+    
+    margin: 0px;
+    background-color: #000000; /* Slightly deeper gray */
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #eaeaea;
 }
 
-#compare_table{
-    /* visibility: hidden; */
-}
 .topnav {
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 18px;
     width: 100%;
+    height: 50px;
     float: right;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .topnav a {
-    text-decoration: none;
     float: right;
     display: block;
-    color: #fff7f7;
+    color: #ffffff;
     text-align: center;
     padding: 14px 20px;
-    text-decoration: none;
-    border-radius: 7px;
+    border-radius: 8px;
     transition: background-color .3s;
+    /* font-size: 16px; */
 }
 
 .topnav a.title {
     float: left;
     margin: 0px 30px;
-    padding: 14px 24px;
-    font-size: 20px;
+    font-size: 22px;
+    color: #00ffd5;
 }
 
 .topnav a.title:hover {
-    float: left;
-    margin: 0px 30px;
-    font-size: 20px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: transparent;
+    color: #00ffd5;
 }
 
 .topnav a:hover {
-    background-color: rgb(255, 245, 245);
-    color: rgb(0, 0, 0);
+    background-color: #00ffd5;
+    color: #000000;
 }
 
-body,
-head {
-    margin: 0px;
-    background-color: rgb(69, 69, 69);
+#smartphone1, #smartphone2 {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #3c3c3c;
+    color: #ffffff;
+    width: 220px;
 }
 
-th {
-    background-color: #f4f4f4;
+#compare {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #00ffd5;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .3s;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+#compare:hover {
+    background-color: #00bfa3;
+}
+
+#compare_table {
+    visibility: hidden;
+    margin-top: 20px;
 }
 
 table {
-    width: 81%;
-    /* Set the table width to 100% of its container */
+    color: #000000;
+    width: 85%;
     table-layout: fixed;
-    /* Use fixed layout for equal column widths */
     border-collapse: collapse;
-    /* Optional: collapse borders for a cleaner look */
     margin: 0 auto;
+    font-size: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #3c3c3c;
 }
 
-th,
-td {
+th, td {
     width: 27%;
-    /* Set each column to take up 25% of the table width */
-    border: 1px solid #ddd;
-    /* Optional: add borders to cells */
-    padding: 8px;
-    /* Optional: add padding for better spacing */
+    border: 1px solid #555;
+    padding: 10px;
     text-align: center;
-    /* Optional: align text to the left */
+    color: #ffffff;
 }
 
 th {
-    background-color: #f2f2f2;
-    /* Optional: background color for header */
+    background-color: #00ffd5;
+    color: #000000;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+tr:nth-child(odd) {
+    background-color: #444;
 }
 
 .property-column {
     text-align: center;
     width: 100%;
 }
+
+.description-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .description-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Share Tech', sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  .description-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .description-card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #00ffe7;
+  }
+  
+  .description-card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .phone-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .description-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none; /* Prevent interaction when hidden */
+  }
+  
+  .description-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
