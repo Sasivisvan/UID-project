@@ -1,4 +1,23 @@
 /* Updated Colors & Sizing */
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ffd5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00ccaa;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
 
 body,
 head {
