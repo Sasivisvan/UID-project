@@ -1,9 +1,14 @@
 
 #smartphone1{
-    
+    display: flex;
+}
+#smartphone2{
+    display: flex;
 }
 
-
+#compare_table{
+    /* visibility: hidden; */
+}
 .topnav {
     background-color: black;
     color: white;
@@ -49,6 +54,7 @@
 body,
 head {
     margin: 0px;
+    background-color: rgb(69, 69, 69);
 }
 
 th {

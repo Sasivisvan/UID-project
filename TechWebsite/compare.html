@@ -21,8 +21,8 @@
 <body>
     <div class="topnav">
         <a class="title" href="#">TechIcon</h1>
-        <a href="#login">Login</a>
-        <a href="#signup">Signup</a>
+        <a href="login-page.html">Login</a>
+        <a href="signup-page.html">Signup</a>
         <a href="home.html">Home</a>
         <a href="#latest">Latest</a>
         <a href="compare.html">Compare</a>
@@ -54,14 +54,11 @@
         <option value="Asus ROG Phone 5">Asus ROG Phone 5</option>
         <option value="Motorola Edge 20 Pro">Motorola Edge 20 Pro</option>
       </select>
-      
-    </head>
+      <button id="compare" onclick="compare()">Compare</button>
 
-    <body>
+        <h1 style="text-align: center; color: rgb(255, 255, 255)">Smartphone Comparison</h1>
 
-        <h1 style="text-align: center;">Smartphone Comparison</h1>
-
-        <table>
+        <table id="compare_table">
             <thead>
                 <tr>
 
@@ -116,7 +113,6 @@
                 </tr>
             </tbody>
         </table>
-        <button onclick="display(smartphone1, smartphone2)">Click me</button>
         <script src="compare2.js"></script>
     </body>
 
