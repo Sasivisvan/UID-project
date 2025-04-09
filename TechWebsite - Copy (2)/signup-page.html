@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <title>Signin</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="title" href="#">TechIcon</a>
+        <a href="login-page.html">Login</a>
+        <a href="signup-page.html">Signup</a>
+        <a href="latest-page.html">Upcoming</a>
+        <a href="compare.html">Compare</a>
+        <a href="products.html">Products</a>
+        <a href="home.html">Home</a>
+    </div>
+    <br>
+    <h2>Enter Signin Credentials</h2><br>
+    <div class="boxl">
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <a href="" class="forgot-password">Forgot Password?</a>
+
+            <div class="button-container">
+                <button type="submit">Sign-in</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

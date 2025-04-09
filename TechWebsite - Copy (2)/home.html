@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="title" href="#">TechIcon</a>
+        <a href="login-page.html">Login</a>
+        <a href="signup-page.html">Signup</a>
+        <a href="latest-page.html">Upcoming</a>
+        <a href="compare.html">Compare</a>
+        <a href="products.html">Products</a>
+        <a href="home.html">Home</a>
+    </div>
+    <div class="container">
+        <h1 style="text-align: center; color: #00ffd5; margin-top: 50px;">Explore Our Features</h1>
+        <div class="card-container">
+            <a href="compare.html" class="card">
+                <h2>Compare Smartphones</h2>
+                <p>Find the best smartphone by comparing features and specifications.</p>
+            </a>
+            <a href="latest-page.html" class="card">
+                <h2>Upcoming Devices</h2>
+                <p>Discover the latest upcoming smartphones and laptops.</p>
+            </a>
+            <a href="products.html" class="card">
+                <h2>Products</h2>
+                <p>Browse through our collection of top smartphones.</p>
+            </a>
+        </div>
+    </div>
+</body>
+<style>
+/* Add styles for the cards */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+body{
+    background-color: black;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: black;
+    color: #00ffd5;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 255, 213, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 255, 213, 0.5);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+</style>
+</html>
