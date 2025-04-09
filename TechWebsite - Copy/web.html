@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Smartphones Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  
+    h1 {
+      text-align: center;
+      padding: 40px 20px 10px 20px;
+      font-size: 3em;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      position: relative;
+      margin: 0;
+      background: linear-gradient(45deg, #222, #444);
+      color: white;
+      font-weight: 700;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  
+    h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #00ffd5;
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      background: linear-gradient(145deg, #1a1a1a, #333);
+      border: 2px solid #00ffd5;
+      width: calc(33.33% - 40px);
+      max-width: 300px;
+      min-width: 260px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 255, 213, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0, 255, 213, 0.1) 0%, transparent 70%);
+      transform: rotate(45deg);
+      pointer-events: none;
+    }
+  
+    .card:hover {
+      transform: scale(1.05);
+      background: linear-gradient(145deg, #00ffd5, #00cccc);
+      color: black;
+      box-shadow: 0 8px 25px rgba(0, 255, 213, 0.5);
+    }
+  
+    .card-title {
+      font-size: 1.4em;
+      margin-bottom: 8px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      z-index: 1;
+    }
+  
+    .card-description {
+      font-size: 0.9em;
+      margin-bottom: 8px;
+      font-family: 'Times New Roman', Times, serif;
+      z-index: 1;
+    }
+  
+    .card-info {
+      font-size: 0.8em;
+      text-align: center;
+      color: #00ffd5;
+      margin-bottom: 6px;
+      z-index: 1;
+    }
+  
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+    }
+  
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+  
+    footer a:hover {
+      color: #00ffd5;
+    }
+  
+    /* Responsive */
+    @media (max-width: 900px) {
+      .card {
+        width: calc(50% - 40px);
+      }
+    }
+  
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+  
+      .card-title {
+        font-size: 1.1em;
+      }
+  
+      .card-description,
+      .card-info {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <h1>Discover Latest Smartphones</h1>
+
+  <div class="container">
+    <a href="https://www.amazon.com/s?k=iphone+15+pro" target="_blank" class="card">
+      <div class="card-title">iPhone 15 Pro</div>
+      <div class="card-description">A17 chip, titanium frame.</div>
+      <div class="card-info">Price: ~$999</div>
+      <div class="card-info">Battery: 3200mAh</div>
+      <div class="card-info">Display: OLED, 120Hz</div>
+      <div class="card-info">Storage: 128GB / 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=samsung+galaxy+s24+ultra" target="_blank" class="card">
+      <div class="card-title">Galaxy S24 Ultra</div>
+      <div class="card-description">200MP camera system.</div>
+      <div class="card-info">Price: ~$1199</div>
+      <div class="card-info">Battery: 5000mAh</div>
+      <div class="card-info">Display: AMOLED, 120Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB / 1TB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=google+pixel+8+pro" target="_blank" class="card">
+      <div class="card-title">Pixel 8 Pro</div>
+      <div class="card-description">Smart AI features.</div>
+      <div class="card-info">Price: ~$999</div>
+      <div class="card-info">Battery: 5050mAh</div>
+      <div class="card-info">Display: LTPO OLED, 120Hz</div>
+      <div class="card-info">Storage: 128GB / 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=oneplus+12" target="_blank" class="card">
+      <div class="card-title">OnePlus 12</div>
+      <div class="card-description">Fast charging phone.</div>
+      <div class="card-info">Price: ~$899</div>
+      <div class="card-info">Battery: 5400mAh</div>
+      <div class="card-info">Display: AMOLED, 120Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=xiaomi+14+pro" target="_blank" class="card">
+      <div class="card-title">Xiaomi 14 Pro</div>
+      <div class="card-description">Sleek design, fast chip.</div>
+      <div class="card-info">Price: ~$899</div>
+      <div class="card-info">Battery: 4880mAh</div>
+      <div class="card-info">Display: AMOLED, 120Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=sony+xperia+1+v" target="_blank" class="card">
+      <div class="card-title">Xperia 1 V</div>
+      <div class="card-description">Pro camera system.</div>
+      <div class="card-info">Price: ~$1399</div>
+      <div class="card-info">Battery: 5000mAh</div>
+      <div class="card-info">Display: OLED, 120Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=asus+rog+phone+8" target="_blank" class="card">
+      <div class="card-title">ROG Phone 8</div>
+      <div class="card-description">Gaming beast.</div>
+      <div class="card-info">Price: ~$1099</div>
+      <div class="card-info">Battery: 6000mAh</div>
+      <div class="card-info">Display: AMOLED, 165Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=motorola+edge+40+pro" target="_blank" class="card">
+      <div class="card-title">Edge 40 Pro</div>
+      <div class="card-description">Flagship performance.</div>
+      <div class="card-info">Price: ~$799</div>
+      <div class="card-info">Battery: 4600mAh</div>
+      <div class="card-info">Display: OLED, 165Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=realme+gt+5" target="_blank" class="card">
+      <div class="card-title">Realme GT 5</div>
+      <div class="card-description">Affordable flagship.</div>
+      <div class="card-info">Price: ~$599</div>
+      <div class="card-info">Battery: 5240mAh</div>
+      <div class="card-info">Display: AMOLED, 144Hz</div>
+      <div class="card-info">Storage: 256GB / 512GB</div>
+    </a>
+
+    <a href="https://www.amazon.com/s?k=nokia+xr21" target="_blank" class="card">
+      <div class="card-title">Nokia XR21</div>
+      <div class="card-description">Rugged and tough.</div>
+      <div class="card-info">Price: ~$499</div>
+      <div class="card-info">Battery: 4800mAh</div>
+      <div class="card-info">Display: IPS LCD, 120Hz</div>
+      <div class="card-info">Storage: 128GB / 256GB</div>
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smartphone Showcase. All rights reserved.</p>
+    <p>Contact Us | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>

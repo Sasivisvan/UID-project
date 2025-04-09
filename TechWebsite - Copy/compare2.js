@@ -158,26 +158,43 @@ function display(smartphone1, smartphone2) {
   document.getElementById("phone-2-price-value").innerHTML = smartphone2.Price;
 
   // Helper function to compare and color
-  function compareValues(val1, val2, id1, id2) {
-    if (val1 > val2) {
-      document.getElementById(id1).style.backgroundColor = better;
-      document.getElementById(id2).style.backgroundColor = worse;
-    } else if (val1 < val2) {
-      document.getElementById(id1).style.backgroundColor = worse;
-      document.getElementById(id2).style.backgroundColor = better;
+  function compareValues(val1, val2, id1, id2, reverse = false) {
+    if (reverse) {
+      // Invert comparison for "lower is better"
+      if (val1 < val2) {
+        document.getElementById(id1).style.backgroundColor = better;
+        document.getElementById(id2).style.backgroundColor = worse;
+      } else if (val1 > val2) {
+        document.getElementById(id1).style.backgroundColor = worse;
+        document.getElementById(id2).style.backgroundColor = better;
+      } else {
+        document.getElementById(id1).style.backgroundColor = neutral;
+        document.getElementById(id2).style.backgroundColor = neutral;
+      }
     } else {
-      document.getElementById(id1).style.backgroundColor = neutral;
-      document.getElementById(id2).style.backgroundColor = neutral;
+      // Default: higher is better
+      if (val1 > val2) {
+        document.getElementById(id1).style.backgroundColor = better;
+        document.getElementById(id2).style.backgroundColor = worse;
+      } else if (val1 < val2) {
+        document.getElementById(id1).style.backgroundColor = worse;
+        document.getElementById(id2).style.backgroundColor = better;
+      } else {
+        document.getElementById(id1).style.backgroundColor = neutral;
+        document.getElementById(id2).style.backgroundColor = neutral;
+      }
     }
   }
+  
 
   // Perform comparisons
-  compareValues(smartphone1.Price, smartphone2.Price, "phone-1-price-value", "phone-2-price-value");
+  compareValues(smartphone1.Price, smartphone2.Price, "phone-1-price-value", "phone-2-price-value", true); // lower is better
   compareValues(smartphone1.Camera, smartphone2.Camera, "phone-1-camera-value", "phone-2-camera-value");
   compareValues(smartphone1.Battery, smartphone2.Battery, "phone-1-battery-value", "phone-2-battery-value");
   compareValues(smartphone1.Display, smartphone2.Display, "phone-1-display-value", "phone-2-display-value");
   compareValues(smartphone1.RAM, smartphone2.RAM, "phone-1-ram-value", "phone-2-ram-value");
   compareValues(smartphone1.Storage, smartphone2.Storage, "phone-1-storage-value", "phone-2-storage-value");
+  
 }
 
 
