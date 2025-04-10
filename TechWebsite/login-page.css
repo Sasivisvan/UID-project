@@ -52,15 +52,16 @@ h2 {
 .boxl form input {
     background-color:dimgrey;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
+    margin-left: 10px;
 }
 
 .boxl form input:hover {
-    box-shadow: 0 0 5px 2px #000000,
-    0 0 5px 2px #000000,
-    0 0 5px 2px #000000,
-    0 0 5px 2px #000000
+    box-shadow: 0 0 5px 2px #00ffd5,
+    0 0 5px 2px #00ffd5,
+    0 0 5px 2px #00ffd5,
+    0 0 5px 2px #00ffd5
               
 }
 .boxl form a{

@@ -1,3 +1,8 @@
+
+html, body {
+    overflow-x: hidden;
+  }
+  
 body {
     margin: 0;
     padding: 0;
@@ -55,7 +60,7 @@ h1::after {
     width: calc(33.33% - 40px);
     max-width: 300px;
     min-width: 260px;
-    height: 380px;
+    height: 420px;
     /* 👈 Fixed height for consistency */
     text-align: center;
     text-decoration: none;
@@ -94,12 +99,7 @@ h1::after {
     pointer-events: none;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    background: linear-gradient(145deg, #00ffd5, #00cccc);
-    color: black;
-    box-shadow: 0 8px 25px rgba(0, 255, 213, 0.5);
-}
+
 
 .card-title {
     font-size: 1.4em;
@@ -125,7 +125,21 @@ h1::after {
     z-index: 1;
     min-height: 16px;
 }
+.card-info:hover{
+    color: #000000;
+}
 
+.card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #00ffd5, #00cccc);
+    color: black;
+    box-shadow: 0 8px 25px rgba(0, 255, 213, 0.5);
+}
+
+.card:hover .card-info{
+    color: #000000;
+    font-weight: bold;
+}
 footer {
     background: #111;
     text-align: center;
