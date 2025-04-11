@@ -7,6 +7,7 @@ const smartphones = [
     RAM: 4,
     Storage: 128,
     Price: "₹42,999",
+    Image:"https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.slideshow-xlarge_2x.jpg",
     Description: "The iPhone 13 features a 6.1-inch OLED display, A15 Bionic chip, and dual 12MP cameras. It delivers great performance, battery life, and excellent photography features like Night Mode and Cinematic Mode. With 5G support and a sleek design, it's ideal for both everyday users and professionals."
   },
   {
@@ -17,6 +18,7 @@ const smartphones = [
     RAM: 8,
     Storage: 128,
     Price: "₹69,999",
+    Image:"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTnu6Gc0JJKcgA3OdS2r2pnar9lm_suHsSPupiuj7fkbK--PCGHNrVmryB55uf0dDEQDpfWbzMB0jrgg0kqaHPsBG8EMmp2hn9_XhSRHj7-NbWYzpV75raupg",
     Description: "The Galaxy S21 boasts a 6.2-inch AMOLED display with 120Hz refresh rate, 64MP camera, and 4000mAh battery. Powered by Snapdragon 888/Exynos 2100, it offers fast performance, 5G, and a sleek design, making it a compact flagship choice for Android fans."
   },
   {
@@ -27,6 +29,7 @@ const smartphones = [
     RAM: 8,
     Storage: 128,
     Price: "₹52,000",
+    Image:"https://m.media-amazon.com/images/I/61ruKkvVIxL._SL1000_.jpg",
     Description: "Pixel 6 offers a 6.4-inch OLED display, Google Tensor chip, and a powerful 50MP camera with great low-light capabilities. With Android 12 and a 4600mAh battery, it’s a smart, clean, and customizable phone tailored for photography lovers and Android purists."
   },
   {
@@ -37,6 +40,7 @@ const smartphones = [
     RAM: 12,
     Storage: 256,
     Price: "₹49,999",
+    Image:"https://m.media-amazon.com/images/I/41R3ufWRt8L._SX300_SY300_QL70_FMwebp_.jpg",
     Description: "The OnePlus 9 delivers fast, smooth performance with Snapdragon 888, 120Hz AMOLED display, and 48MP Hasselblad camera. Its 4500mAh battery charges fully in under 30 minutes. With 12GB RAM and clean OxygenOS, it’s a flagship device built for power users."
   },
   {
@@ -47,6 +51,7 @@ const smartphones = [
     RAM: 8,
     Storage: 128,
     Price: "₹54,999",
+    Image:"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTNeKK6TA_ZlAga76r4x2yiWH4libvvfoXUOU5ACOFtHtFk263pQ207kv0oU0L9sf3udNLk6r6LqJiFqsK_NXnf-Eg1e_KY9m2qekCEa2tRIVvCyjNmDQsRVA",
     Description: "Xiaomi Mi 11 features a 6.81-inch 120Hz AMOLED display, Snapdragon 888, and a stunning 108MP main camera. With 4600mAh battery, fast charging, and Harman Kardon speakers, it's perfect for multimedia and high-performance users looking for flagship specs at a great price."
   },
   {
@@ -57,6 +62,7 @@ const smartphones = [
     RAM: 12,
     Storage: 256,
     Price: "₹69,999",
+    Image:"https://www.dxomark.com/wp-content/uploads/medias/post-75302/OppoFindX3Pro_2.jpg",
     Description: "Oppo Find X3 Pro offers a 6.7-inch AMOLED QHD+ display, Snapdragon 888, and dual 50MP cameras. It includes a unique microlens camera, 4500mAh battery with fast charging, and premium design—making it a high-end smartphone for both style and performance enthusiasts."
   },
   {
@@ -67,6 +73,7 @@ const smartphones = [
     RAM: 8,
     Storage: 128,
     Price: "₹72,000",
+    Image:"https://images.indianexpress.com/2020/03/huawei-p40-759-1.jpg",
     Description: "The Huawei P40 Pro excels in photography with its 50MP Leica quad-camera system. It offers a 6.58-inch OLED display, 90Hz refresh rate, Kirin 990 5G chip, and 4200mAh battery. It’s ideal for camera lovers, despite lacking Google services."
   },
   {
@@ -77,6 +84,7 @@ const smartphones = [
     RAM: 8,
     Storage: 128,
     Price: "₹19,999",
+    Image:"https://m.media-amazon.com/images/I/21OqY+ag5nL._AC_UF1000,1000_QL80_.jpg",
     Description: "Realme GT 5G offers Snapdragon 870 power, a 6.43-inch AMOLED 120Hz display, and 64MP camera. With 4500mAh battery and 65W charging, it's a fast, stylish phone delivering flagship performance at an affordable price—great for gamers and multitaskers."
   },
   {
@@ -87,6 +95,7 @@ const smartphones = [
     RAM: 16,
     Storage: 512,
     Price: "₹69,999",
+    Image:"https://dlcdnwebimgs.asus.com/gain/7E04DF02-69CB-4425-A15E-A509A3C61220/h300/w300",
     Description: "The ROG Phone 5 is a gaming beast with a 6.78-inch 144Hz AMOLED display, Snapdragon 888, and 16GB RAM. A massive 6000mAh battery powers long sessions, while features like AirTriggers and stereo speakers enhance the gaming experience."
   },
   {
@@ -97,6 +106,7 @@ const smartphones = [
     RAM: 12,
     Storage: 256,
     Price: "₹24,999",
+    Image:"https://rukminim2.flixcart.com/image/750/900/ku5ufm80/mobile/j/s/o/edge-20-pro-pany0009in-motorola-original-imag7csrpevn6fgg.jpeg?q=20&crop=false",
     Description: "Motorola Edge 20 Pro combines a 108MP camera, 144Hz OLED display, and Snapdragon 870 for a smooth, powerful experience. With 12GB RAM, 5x zoom, and 4500mAh battery, it's ideal for photography fans and users who want high-end features at a competitive price."
   },
 ];
@@ -114,6 +124,10 @@ function compare() {
     if (smartphones[i].Name == s2) {
       var smartphone2 = smartphones[i];
     }
+  }
+  if(smartphone1==smartphone2){
+    alert("Cannot compare 2 same smartphone");
+    return;
   }
   display(smartphone1, smartphone2);
 }
